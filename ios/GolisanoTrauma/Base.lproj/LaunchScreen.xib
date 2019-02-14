@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_logo" translatesAutoresizingMaskIntoConstraints="NO" id="rZ5-yj-vp9">
+                    <rect key="frame" x="20" y="202" width="335" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rZ5-yj-vp9" secondAttribute="height" multiplier="187:29" id="UOn-Jd-0x3"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pediatric Imaging Guidance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WHk-bk-P1i">
+                    <rect key="frame" x="59.666666666666671" y="271" width="255.33333333333331" height="25.666666666666686"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="21"/>
+                    <color key="textColor" red="0.00083102402277290821" green="0.27310770750045776" blue="0.49734264612197876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sandy" translatesAutoresizingMaskIntoConstraints="NO" id="was-5L-oQn">
+                    <rect key="frame" x="60" y="326.66666666666669" width="255" height="219.33333333333331"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="was-5L-oQn" secondAttribute="height" multiplier="79:68" id="zgn-dk-CyA"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WHk-bk-P1i" firstAttribute="top" secondItem="rZ5-yj-vp9" secondAttribute="bottom" constant="17" id="5mH-7E-AoL"/>
+                <constraint firstAttribute="trailing" secondItem="was-5L-oQn" secondAttribute="trailing" constant="60" id="8fl-Us-w2U"/>
+                <constraint firstAttribute="trailing" secondItem="rZ5-yj-vp9" secondAttribute="trailing" constant="20" id="9WN-62-ZHU"/>
+                <constraint firstItem="WHk-bk-P1i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="60" id="AqY-v1-lLe"/>
+                <constraint firstItem="rZ5-yj-vp9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="202" id="IAj-Tu-Cz3"/>
+                <constraint firstItem="rZ5-yj-vp9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Nas-QU-hiD"/>
+                <constraint firstItem="was-5L-oQn" firstAttribute="top" secondItem="WHk-bk-P1i" secondAttribute="bottom" constant="30" id="XLW-lN-jkw"/>
+                <constraint firstItem="WHk-bk-P1i" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bza-c7-jJ0"/>
+                <constraint firstItem="was-5L-oQn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="60" id="dpx-ly-i3y"/>
+                <constraint firstItem="rZ5-yj-vp9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tVy-5b-Yy8"/>
+                <constraint firstAttribute="trailing" secondItem="WHk-bk-P1i" secondAttribute="trailing" constant="60" id="y5s-UO-6zs"/>
+                <constraint firstItem="was-5L-oQn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zAW-oj-6rh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="546.5" y="449.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Sandy" width="694" height="741"/>
+        <image name="header_logo" width="1878" height="286"/>
+    </resources>
+</document>
